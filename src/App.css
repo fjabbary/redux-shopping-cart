@@ -91,3 +91,158 @@
   width: 100%;
   border-radius: 5px;
 }
+
+.product button:hover {
+  background-color: rgb(1, 55, 118);  
+}
+
+/* ======================= */
+/* ====== Cart CSS ======= */
+/* ======================= */
+.cart-page-title {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.cart-headers {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-headers div {
+  width: 25%;
+  text-align: center;
+}
+
+.empty-cart {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.empty-cart a {
+  color: rgb(129, 128, 128);
+  text-decoration: none;
+}
+
+.empty-cart a:hover {
+  text-decoration: underline;
+}
+
+.cart-items {
+  padding: 30px 60px;
+}
+
+.cart-headers, .cart-item {
+  display: flex;
+}
+
+.cart-item {
+  justify-content:space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-item > div {
+  width: 25%;
+  text-align: center;
+}
+
+.product-detail {
+  display: flex;
+}
+
+.product-img {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-img img {
+  width: 80%;
+}
+
+.product-name button {
+  background: none;
+  border: none;
+  color: rgb(249, 56, 56);
+}
+
+.product-name button:hover {
+  text-decoration: underline;
+}
+
+.product-qty-btn {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.product-qty button {
+  padding: 5px 15px;
+  background: none;
+  border: none;
+}
+
+.product-qty button:hover {
+  background: #eee;
+}
+
+.product-qty span {
+  padding: 5px 15px;
+}
+
+.cart-cta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  /* align-items: center; */
+}
+
+.clear-cart {
+  background: none;
+  border: 1px solid rgb(100, 100, 100);;
+  color: rgb(100, 100, 100);
+  padding: 7px 20px;
+}
+
+.clear-cart:hover {
+  background: #eee;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-checkout {
+  display: block;
+  background: #0275d8;
+  color: #fff;
+  width: 100%;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.btn-checkout:hover {
+  background: #005198;
+}
+
+.cart-cta a {
+  color: rgb(97, 97, 97);
+  text-decoration: none;
+  
+}
+
+.cart-cta a svg{
+  transition: all 0.3s ease-in-out;
+}
+
+.cart-cta a:hover svg {
+  margin-right: 10px;
+}
