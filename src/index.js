@@ -4,7 +4,7 @@ import App from './App';
 
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
-import productReducer from './features/productSlice';
+// import productReducer from './features/productSlice';
 import cartReducer from './features/cartSlice'
 
 import { productsApi } from './features/productsApi'

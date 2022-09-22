@@ -3,6 +3,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home';
+import ProductDetails from './components/ProductDetails';
 import Cart from './components/Cart';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
@@ -16,6 +17,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

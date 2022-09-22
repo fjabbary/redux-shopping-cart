@@ -6,11 +6,15 @@ export const productsApi = createApi({
     baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000' }),
     endpoints: (builder) => ({
         getAllProducts: builder.query({
-            query: () => 'products',
+            query: () => 'products'
+        }),
+        getProductDetail: builder.query({
+            query: (id) => `/products/${id}`
         }),
     }),
+
 })
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useGetAllProductsQuery } = productsApi
+export const { useGetAllProductsQuery, useGetProductDetailQuery } = productsApi

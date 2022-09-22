@@ -6,7 +6,6 @@ import { getTotal } from '../features/cartSlice'
 function Navbar() {
     const cart = useSelector(state => state.cart);
     const cartTotalAmount = useSelector(state => state.cart.cartTotalQuantity);
-    console.log(cartTotalAmount)
     const dispatch = useDispatch();
 
     useEffect(() => {
