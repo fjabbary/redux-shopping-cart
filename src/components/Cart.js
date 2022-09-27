@@ -43,6 +43,9 @@ function Cart() {
                                 <div>QUANTITY</div>
                                 <div>TOTAL</div>
                             </div>
+
+                            <div className="cart-title-product">PRODUCT</div>
+
                             {cartItems.map(({ id, name, price, desc, image, cartQuantity }) => (
 
                                 <div className="cart-item" key={id}>
@@ -56,15 +59,20 @@ function Cart() {
                                         </div>
                                     </div>
 
-                                    <div className="product-price">${price}</div>
+                                    <div className="product-price">
+                                        <label className="cart-title-price">PRICE</label>
+                                        ${price}</div>
                                     <div className="product-qty">
+                                        <label className="cart-title-qty">QUANTITY</label>
                                         <div className="product-qty-btn">
                                             <button onClick={() => handlechangeQuantity(id, 'dec')}>-</button>
                                             <span>{cartQuantity}</span>
                                             <button onClick={() => handlechangeQuantity(id, 'inc')}>+</button>
                                         </div>
                                     </div>
-                                    <div className="product-total">${cartQuantity * price}</div>
+                                    <div className="product-total">
+                                        <label className="cart-title-total">TOTAL</label>
+                                        ${cartQuantity * price}</div>
                                 </div>
                             ))}
 
